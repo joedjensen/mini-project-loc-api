@@ -15,21 +15,28 @@
         <form class = col-8>
             <div class="form-row">
                 <div class="form-group col-12">
-                    <label for="inputEmail4">Email</label>
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+                    <label for="text-input">Email</label>
+                    <input type="text" class="form-control" id="text-input" placeholder="Email">
                 </div>
             </div>
             <!-- todo, separate rows -->
             <div class="form-row">
                 <div class="form-group col-12">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
+                    <label for="dropdown">State</label>
+                    <select id="dropdown" class="form-control">
                         <option selected>Choose...</option>
-                        <option>...</option>
+                        <option data-search-text="maps">Maps</option>
+                        <option data-search-text="audio">Audio</option>
+                        <option data-search-text="photos">Photos</option>
+                        <option data-search-text="manuscripts">Manuscripts</option>
+                        <option data-search-text="newspapers">Newspapers</option>
+                        <option data-search-text="film-and-videos">Film/Video</option>
+                        <option data-search-text="notated-music">Sheet Music</option>
+                        <option data-search-text="websites">Websites</option>
                     </select>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary" id = "submit-button">Sign in</button>
         </form>
     </main>
 
