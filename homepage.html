@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +10,27 @@
     <title>Document</title>
 </head>
 
-<body class = "bg-dark">
-    <main>
-        <div class="container">
-            <div class = "col-8">
-        <form>
+<body class="bg-dark container">
+    <main class="row justify-content-around vh-100 align-content-around">
+        <form class = col-8>
             <div class="form-row">
-              <div class="form-group col-12">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-              </div>
-              <!-- todo, separate rows -->
-              <div class="form-group col-12">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
+                <div class="form-group col-12">
+                    <label for="inputEmail4">Email</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+            </div>
+            <!-- todo, separate rows -->
+            <div class="form-row">
+                <div class="form-group col-12">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
             <button type="submit" class="btn btn-primary">Sign in</button>
-          </form>
-        </div>
-        </div>
+        </form>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
@@ -38,4 +38,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
