@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="row vh-100">
+        <div class="col-3 bg-white">
+            <form class="col-8  p-5">
+                <div class="form-title ">Search The Libary of Congress</div>
+                <div class="form-row ">
+                    <div class="form-group col-12">
+                        <label for="text-input">Search</label>
+                        <input type="text" class="form-control" id="text-input" placeholder="Search">
+                    </div>
+                </div>
+                <!-- todo, separate rows -->
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <label for="dropdown">Format</label>
+                        <select id="dropdown" class="form-control">
+                            <option selected>Choose...</option>
+                            <option data-search-text="maps">Maps</option>
+                            <option data-search-text="audio">Audio</option>
+                            <option data-search-text="photos">Photos</option>
+                            <option data-search-text="manuscripts">Manuscripts</option>
+                            <option data-search-text="newspapers">Newspapers</option>
+                            <option data-search-text="film-and-videos">Film/Video</option>
+                            <option data-search-text="notated-music">Sheet Music</option>
+                            <option data-search-text="websites">Websites</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary col-12" id="submit-button">Sign in</button>
+                <button class="btn btn-secondary col-12 mt-2" id="submit-button">Back</button>
+            </form>
+        </div>
+        <div class="col-9 bg-primary">
+            <div class="lead text-white">Search Results</div>
+            <ul id="cardPlace">
+
+            </ul>
+            <div class="card mt-2">
+                <div class="card-body ">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./assets/js/results.js"></script>
+</body>
+
+</html>
