@@ -91,5 +91,5 @@ getResultsName();
 submitButtonEl.on("click", fetchResults)
 backButtonEl.on("click", function (event) {
     event.preventDefault()
-    document.location.replace("./homepage.html")
+    document.location.replace("./index.html")
 })
