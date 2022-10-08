@@ -8,15 +8,11 @@ var dropDownEl = $('#dropdown')
 function fetchResults(event) {
     event.preventDefault()
     var format = dropDownEl.find(":selected").attr("data-search-text")
-    fetch('https://www.loc.gov/' + format + '/?q=' + searchTextEl.val() + "&fo=json")
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data);
-        });
-
-    document.location.replace("./search-results.html?q=" + searchTextEl.val() + "&form=" + format);
+    if (format && searchTextEl.val()) {
+        document.location = ("./search-results.html?q=" + searchTextEl.val() + "&form=" + format);
+    } else {
+        alert("Please enter both parameters")
+    }
 }
 
 // TODO: display search

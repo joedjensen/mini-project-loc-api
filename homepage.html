@@ -13,19 +13,17 @@
 <body class="bg-dark container">
     <main class="row justify-content-around vh-100 align-content-around">
         <form class="col-8 bg-white p-5">
-            <div class="form-title text-center">Search The Libary of Congress</div>
+            <h1 class="form-title text-center">Search The Library of Congress</h1>
             <div class="form-row ">
                 <div class="form-group col-12">
-                    <label for="text-input">Email</label>
-                    <input type="text" class="form-control" id="text-input" placeholder="Email">
+                    <input type="text" class="form-control" id="text-input" placeholder="Search!">
                 </div>
             </div>
             <!-- todo, separate rows -->
             <div class="form-row">
                 <div class="form-group col-12">
-                    <label for="dropdown">State</label>
                     <select id="dropdown" class="form-control">
-                        <option selected>Choose...</option>
+                        <option selected>Select a format...</option>
                         <option data-search-text="maps">Maps</option>
                         <option data-search-text="audio">Audio</option>
                         <option data-search-text="photos">Photos</option>
@@ -37,7 +35,7 @@
                     </select>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary" id="submit-button">Sign in</button>
+            <button type="submit" class="btn btn-primary col-12" id="submit-button">Click me</button>
         </form>
     </main>
 

@@ -13,13 +13,12 @@
 <body>
 
     <div class="row vh-100">
-        <div class="col-3 bg-white">
-            <form class="col-8  p-5">
-                <div class="form-title ">Search The Libary of Congress</div>
+        <div class="col-3 bg-white ">
+            <form class=" position-fixed p-5 col-3">
+                <h2 class="form-title ">Search The Library of Congress</h2>
                 <div class="form-row ">
                     <div class="form-group col-12">
-                        <label for="text-input">Search</label>
-                        <input type="text" class="form-control" id="text-input" placeholder="Search">
+                        <input type="text" class="form-control" id="text-input" placeholder="Search!">
                     </div>
                 </div>
                 <!-- todo, separate rows -->
@@ -27,7 +26,7 @@
                     <div class="form-group col-12">
                         <label for="dropdown">Format</label>
                         <select id="dropdown" class="form-control">
-                            <option selected>Choose...</option>
+                            <option selected>Select a format...</option>
                             <option data-search-text="maps">Maps</option>
                             <option data-search-text="audio">Audio</option>
                             <option data-search-text="photos">Photos</option>
@@ -39,23 +38,15 @@
                         </select>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary col-12" id="submit-button">Sign in</button>
-                <button class="btn btn-secondary col-12 mt-2" id="submit-button">Back</button>
+                <button type="submit" class="btn btn-primary col-12" id="submit-button">Search</button>
+                <button class="btn btn-secondary col-12 mt-2" id="back-button">Back</button>
             </form>
         </div>
         <div class="col-9 bg-primary">
-            <div class="lead text-white">Search Results</div>
-            <ul id="cardPlace">
-
+            <h3 class="lead text-white sticky-top bg-primary">Search Results</h3>
+            <ul id="cardPlace" class = "col-12">
+                Results Loading...
             </ul>
-            <div class="card mt-2">
-                <div class="card-body ">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
         </div>
     </div>
 
